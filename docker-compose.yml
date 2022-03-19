@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+# Rust
+  rust-dev:
+    build: ./docker/rust
+    container_name: rust_dev
+    volumes:
+      - ./:/app
+    tty: true
+    privileged: true # for TAN/TAP
+    environment:
+      CARGO_BUILD_TARGET_DIR: /tmp/target
+    command: bash
