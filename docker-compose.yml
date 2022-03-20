@@ -11,4 +11,5 @@ services:
     privileged: true # for TAN/TAP
     environment:
       CARGO_BUILD_TARGET_DIR: /tmp/target
-    command: bash
+    command: sh -c "sh ./init_tap.sh && /bin/bash"
+
