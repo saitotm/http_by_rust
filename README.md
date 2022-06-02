@@ -1,6 +1,11 @@
 # http_by_rust
 Implementation http client by Rust
 
-Implemented Method
+```
+docker-compose up
+cargo run -- <url> tap-rust
+```
+
+## Implemented Method
 - GET
 
